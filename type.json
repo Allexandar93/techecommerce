@@ -1,0 +1,22 @@
+[
+  {
+    "name": "PC Keyboard",
+    "price": "47.99",
+    "imgSrc": "img/k1.jpg"
+  },
+  {
+    "name": "PC Keyboard",
+    "price": "74.99",
+    "imgSrc": "img/k2.jpg"
+  },
+  {
+    "name": "PC Keyboard",
+    "price": "39.99",
+    "imgSrc": "img/k3.jpg"
+  },
+  {
+    "name": "PC Keyboard",
+    "price": "99.99",
+    "imgSrc": "img/k4.jpg"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Speakers",
+    "price": "57.99",
+    "imgSrc": "img/s1.jpg"
+  },
+  {
+    "name": "Speakers",
+    "price": "69.99",
+    "imgSrc": "img/s2.jpg"
+  },
+  {
+    "name": "Speakers",
+    "price": "41.99",
+    "imgSrc": "img/s3.jpg"
+  },
+  {
+    "name": "Speakers",
+    "price": "79.99",
+    "imgSrc": "img/s4.jpg"
+  }
+]

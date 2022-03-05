@@ -1,0 +1,22 @@
+[
+  {
+    "name": "PC Mouse",
+    "price": "32.99",
+    "imgSrc": "img/f1.png"
+  },
+  {
+    "name": "Earphones",
+    "price": "89.99",
+    "imgSrc": "img/f2.jpg"
+  },
+  {
+    "name": "Speakers",
+    "price": "45.99",
+    "imgSrc": "img/f3.jpg"
+  },
+  {
+    "name": "PC Keyboard",
+    "price": "74.99",
+    "imgSrc": "img/f4.jpg"
+  }
+]

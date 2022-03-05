@@ -1,0 +1,563 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+h6 {
+  color: #d8d8d8;
+}
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 100%;
+  background-color: #000000;
+  height: 1px;
+}
+
+.brandLogo {
+  font-size: 1.4em;
+  font-family: "Alfa Slab One", sans-serif;
+  letter-spacing: 0.2em;
+}
+
+button {
+  font-size: 0.8rem;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  background-color: #1d1d1d;
+  color: aliceblue;
+  padding: 13px 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #3a3833;
+}
+
+.navbar {
+  font-size: 16px;
+  top: 0;
+  left: 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  padding: 0 20px;
+  color: black;
+  transition: 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar i.active {
+  color: coral;
+}
+
+.navbar i {
+  font-size: 1.2rem;
+  padding: 0 7px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+#navbar-icon {
+  cursor: pointer;
+  transition: 0.3s ease;
+  color: black;
+}
+
+#navbar-icon:hover,
+#navbar.active {
+  color: coral;
+}
+
+@media only screen and (max-width: 991px) {
+  #navbarSupportedContent > ul {
+    margin: 1rem;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+  }
+
+  #navbarSupportedContent > ul > li:nth-child(n) > a {
+    padding: 10px 0;
+  }
+}
+
+#home {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
+    url(img/home.jpg);
+  height: calc(100vh - 72px);
+  width: 100%;
+  margin-top: 72px;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#home span {
+  color: coral;
+}
+
+.home-btn {
+  font-size: 0.8rem;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  background-color: aliceblue;
+  color: black;
+  padding: 13px 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.home-btn:hover {
+  background-color: rgb(255, 127, 80);
+}
+
+#new .one {
+  width: 100%;
+  height: 70vh;
+}
+
+#new .one:nth-child(1) {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(img/new1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#new .one:nth-child(2) {
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    url(img/new2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#new .one:nth-child(3) {
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    url(img/new3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#new .one .details {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+#new .one:hover .details {
+  cursor: pointer;
+  background-color: rgba(255, 127, 80, 0.7);
+}
+
+#new .one:hover .details button {
+  background-color: black;
+  color: coral;
+}
+
+#new .one .details button a {
+  text-decoration: none;
+  color: white;
+}
+
+#new .one:hover .details button a {
+  text-decoration: none;
+  color: coral;
+}
+
+#new .one .details button {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: rgb(255, 127, 80);
+  transition: 0.3s ease;
+}
+
+#new .one .details button:hover {
+  background-color: aliceblue;
+  color: black;
+}
+
+#new .one .details button:hover a {
+  color: black;
+}
+
+#new .one:nth-child(n) .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.product {
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.product img {
+  transition: 0.3s all;
+}
+
+.product:hover img {
+  opacity: 0.7;
+}
+
+.product .buy-btn {
+  background-color: black;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: 0.3s all;
+}
+
+.product:hover .buy-btn {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.buy-btn:hover {
+  background-color: coral;
+}
+
+.star {
+  padding: 10px 0;
+}
+.star i {
+  font-size: 0.8rem;
+  color: goldenrod;
+}
+
+#parallax {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
+    url(img/parallax.jpg);
+  height: 60vh;
+  width: 100%;
+  margin-top: 72px;
+  background-position: top 70px center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#parallax span {
+  color: coral;
+}
+
+#parallax button {
+  background-color: coral;
+}
+#parallax button:hover {
+  background-color: white;
+  color: black;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+footer {
+  background-color: #222222;
+}
+
+footer h5 {
+  color: #d8d8d8;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+footer li {
+  padding-bottom: 8px;
+}
+
+footer li a {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+footer li a:hover {
+  color: #d8d8d8;
+}
+
+footer p {
+  color: #999;
+  font-size: 0.8rem;
+}
+
+footer .copyright a {
+  color: black;
+  width: 38px;
+  height: 38px;
+  background-color: white;
+  display: inline-block;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+  transition: 0.3s ease;
+  margin: 0 5px;
+}
+
+footer .copyright a:hover {
+  color: white;
+  background-color: coral;
+}
+
+.gpay {
+  height: 60px;
+}
+
+.copyrightChildren {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* NEWS */
+
+.newsList a {
+  text-decoration: none;
+  color: black;
+}
+
+#news-container .post .post-img {
+  overflow: hidden;
+  cursor: pointer;
+  max-height: 250px;
+}
+
+.imgNews {
+  transition: 0.3s ease;
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+#news-container .post:hover img {
+  transform: scale(1.3);
+  opacity: 0.8;
+}
+
+#news-container .post h3 {
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#news-container .post:hover h3 {
+  color: coral;
+}
+
+.newsInput {
+  height: 50px;
+}
+
+.searchContainer button {
+  height: 49px;
+}
+.searchContainer button:hover {
+  background-color: coral;
+}
+/* SHOP  */
+
+#featured > nav > ul > li.page-item.active > a {
+  background-color: black;
+  outline: none;
+}
+
+#featured > nav > ul > li:nth-child(n):hover > a {
+  background-color: coral;
+  color: white;
+}
+
+.pagination a {
+  color: black;
+}
+
+/* SPRODUCT  */
+
+.sproduct select {
+  display: block;
+  padding: 5px 10px;
+}
+
+.sproduct input {
+  width: 50px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.sproduct input:focus {
+  outline: none;
+}
+
+/* CART  */
+
+#cart-container {
+  overflow-x: auto;
+}
+
+#cart-container table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+  white-space: nowrap;
+}
+
+#cart-container table thead {
+  font-weight: 700;
+}
+
+#cart-container table thead td {
+  background-color: black;
+  color: white;
+  padding: 6px 0;
+}
+
+#cart-container table td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+#cart-container table td:nth-child(1) {
+  width: 100px;
+}
+#cart-container table td:nth-child(2),
+#cart-container table td:nth-child(3) {
+  width: 200px;
+}
+#cart-container table td:nth-child(4),
+#cart-container table td:nth-child(5),
+#cart-container table td:nth-child(6) {
+  width: 170px;
+}
+
+#cart-container table tbody img {
+  width: 100px;
+  height: auto;
+  margin: 5px 0;
+}
+
+#cart-bottom .coupon > div,
+#cart-bottom .total > div {
+  border: 1px solid black;
+}
+
+#cart-bottom .coupon h5,
+#cart-bottom .total h5 {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-weight: 700;
+}
+
+#cart-bottom .coupon p,
+#cart-bottom .coupon input {
+  padding: 0 12px;
+}
+
+#cart-bottom .coupon input,
+#cart-bottom .coupon button {
+  height: 45px;
+  margin: 0 0 20px 12px;
+}
+#cart-bottom .total div > div {
+  padding: 0 12px;
+}
+#cart-bottom .total h6 {
+  color: black;
+}
+
+#cart-bottom .total div > button {
+  margin: 0 12px 20px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#cart-bottom button:hover {
+  background-color: coral;
+}
+
+.fa-trash {
+  transition: 0.3s ease;
+}
+
+.fa-trash:hover {
+  color: coral;
+  cursor: pointer;
+}
