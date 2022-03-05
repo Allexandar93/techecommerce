@@ -8,25 +8,13 @@ const hearList = document.querySelector(".hearList");
 
 let cartItemID = 1;
 
-const eventListeners = () => {
-  window.addEventListener("DOMContentLoaded", () => {
-    loadFeaturedJSON();
-    loadTypeJSON();
-    loadHearJSON();
-    loadJSON();
-    loadCart();
-  });
-
-  featuredList.addEventListener("click", purchaseProduct);
-  typeList.addEventListener("click", purchaseProduct);
-  hearList.addEventListener("click", purchaseProduct);
-  productList.addEventListener("click", purchaseProduct);
-};
-
-const updateCartTotal = () => {
-  let cartInfo = findCartInfo();
-  cartTotal.textContent = cartInfo;
-};
+window.addEventListener("DOMContentLoaded", () => {
+  loadFeaturedJSON();
+  loadTypeJSON();
+  loadHearJSON();
+  loadJSON();
+  loadCart();
+});
 
 const loadJSON = () => {
   fetch("shop.json")
@@ -136,6 +124,11 @@ const loadHearJSON = () => {
     .catch((err) => console.log(err));
 };
 
+const updateCartTotal = () => {
+  let cartInfo = findCartInfo();
+  cartTotal.textContent = cartInfo;
+};
+
 const purchaseProduct = (e) => {
   if (e.target.classList.contains("buy-btn")) {
     let product = e.target.parentElement;
@@ -154,6 +147,18 @@ const getProductInfo = (product) => {
   saveProductInStorage(productInfo);
 };
 
+const saveProductInStorage = (item) => {
+  let products = getProductFromStorage();
+  products.push(item);
+  localStorage.setItem("products", JSON.stringify(products));
+};
+
+const getProductFromStorage = () => {
+  return localStorage.getItem("products")
+    ? JSON.parse(localStorage.getItem("products"))
+    : [];
+};
+
 const addToCart = (product) => {
   const cartItem = document.createElement("tr");
   cartItem.setAttribute("data-id", `${product.id}`);
@@ -169,18 +174,6 @@ const addToCart = (product) => {
   cartList.appendChild(cartItem);
   updateCartTotal();
   cartList.addEventListener("click", deleteProduct);
-};
-
-const saveProductInStorage = (item) => {
-  let products = getProductFromStorage();
-  products.push(item);
-  localStorage.setItem("products", JSON.stringify(products));
-};
-
-const getProductFromStorage = () => {
-  return localStorage.getItem("products")
-    ? JSON.parse(localStorage.getItem("products"))
-    : [];
 };
 
 const loadCart = () => {
@@ -219,4 +212,7 @@ const deleteProduct = (e) => {
   updateCartTotal();
 };
 
-eventListeners();
+productList.addEventListener("click", purchaseProduct);
+featuredList.addEventListener("click", purchaseProduct);
+typeList.addEventListener("click", purchaseProduct);
+hearList.addEventListener("click", purchaseProduct);
