@@ -17,9 +17,6 @@ const eventListeners = () => {
     loadCart();
   });
 
-  featuredList.addEventListener("click", purchaseProduct);
-  typeList.addEventListener("click", purchaseProduct);
-  hearList.addEventListener("click", purchaseProduct);
   productList.addEventListener("click", purchaseProduct);
 };
 
