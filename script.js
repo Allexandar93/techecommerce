@@ -212,7 +212,7 @@ const deleteProduct = (e) => {
   updateCartTotal();
 };
 
+productList.addEventListener("click", purchaseProduct);
 featuredList.addEventListener("click", purchaseProduct);
 typeList.addEventListener("click", purchaseProduct);
 hearList.addEventListener("click", purchaseProduct);
-productList.addEventListener("click", purchaseProduct);
