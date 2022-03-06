@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Best new apps for 2022",
+    "date": "12 Jan 2022",
+    "imgSrc": "img/news1.png"
+  },
+  {
+    "title": "New trends in coding",
+    "date": "24 Jan 2022",
+    "imgSrc": "img/news2.jpg"
+  },
+  {
+    "title": "Hot new instagram features",
+    "date": "28 Jan 2022",
+    "imgSrc": "img/news3.jpg"
+  },
+  {
+    "title": "Windows 11 updates and what they bring",
+    "date": "08 Feb 2022",
+    "imgSrc": "img/news4.jpg"
+  }
+]
