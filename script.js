@@ -5,6 +5,7 @@ const cartCount = document.querySelector(".cartCountInfo");
 const featuredList = document.querySelector(".featuredList");
 const typeList = document.querySelector(".typeList");
 const hearList = document.querySelector(".hearList");
+const buyBtn = document.querySelectorAll(".buy-btn");
 
 let cartItemID = 1;
 
@@ -59,6 +60,7 @@ const loadFeaturedJSON = () => {
       let html = "";
       data.forEach((product) => {
         html += `
+        <a class="visitShop" href="shop.html" >
         <div class="product text-center col-lg-3 col-md-4 col-12">
           <img class="img-fluid mb-3" src="${product.imgSrc}" alt="" />
           <div class="star">
@@ -70,8 +72,9 @@ const loadFeaturedJSON = () => {
           </div>
           <h5 class="p-name">${product.name}</h5>
           <h4 class="p-price">$${product.price}</h4>
-          <button class="buy-btn">BUY</button>
+          <a href="shop.html" ><button class="buy-btn">VIEW</button> </a>
         </div>
+        </a>
             `;
       });
       featuredList.innerHTML = html;
@@ -86,6 +89,7 @@ const loadTypeJSON = () => {
       let html = "";
       data.forEach((product) => {
         html += `
+        <a class="visitShop" href="shop.html" >
         <div class="product text-center col-lg-3 col-md-4 col-12">
           <img class="img-fluid mb-3" src="${product.imgSrc}" alt="" />
           <div class="star">
@@ -97,8 +101,9 @@ const loadTypeJSON = () => {
           </div>
           <h5 class="p-name">${product.name}</h5>
           <h4 class="p-price">$${product.price}</h4>
-          <button class="buy-btn">BUY</button>
+          <a href="shop.html" ><button class="buy-btn">VIEW</button> </a>
         </div>
+        </a>
             `;
       });
       typeList.innerHTML = html;
@@ -113,6 +118,8 @@ const loadHearJSON = () => {
       let html = "";
       data.forEach((product) => {
         html += `
+        <a class="visitShop" href="shop.html" >
+
         <div class="product text-center col-lg-3 col-md-4 col-12">
           <img class="img-fluid mb-3" src="${product.imgSrc}" alt="" />
           <div class="star">
@@ -124,8 +131,9 @@ const loadHearJSON = () => {
           </div>
           <h5 class="p-name">${product.name}</h5>
           <h4 class="p-price">$${product.price}</h4>
-          <button class="buy-btn">BUY</button>
+          <a href="shop.html" ><button class="buy-btn">VIEW</button> </a>
         </div>
+        </a>
             `;
       });
       hearList.innerHTML = html;

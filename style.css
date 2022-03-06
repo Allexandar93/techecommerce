@@ -254,10 +254,20 @@ button:hover {
   align-items: center;
   text-align: center;
 }
+.visitShop {
+  text-decoration: none;
+  color: black;
+}
+.visitShop:hover {
+  text-decoration: none;
+  color: black;
+}
 
 .product {
   cursor: pointer;
   margin-bottom: 2rem;
+  text-decoration: none;
+  color: black;
 }
 
 .product img {
@@ -422,6 +432,7 @@ footer .copyright a:hover {
 
 .newsInput {
   height: 50px;
+  min-width: 250px;
 }
 
 .searchContainer button {
